@@ -122,14 +122,14 @@ section .section-content {
   max-width: 1200px;
 }
 
-.night-mode {
+.night-mode-button {
   position: absolute;
   right: 35px;
   top: 10px;
   display: block;
 }
 
-.night-mode img {
+.night-mode-button img {
   height: 35px;
 }
 
@@ -196,13 +196,13 @@ form .submit-field {
   section {
     padding: 2em;
   }
-  .night-mode {
+  .night-mode-button {
     position: absolute;
     right: 25px;
     top: 5px;
     display: block;
   }
-  .night-mode img {
+  .night-mode-button img {
     height: 30px;
   }
 }
