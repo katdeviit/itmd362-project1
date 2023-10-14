@@ -21,8 +21,8 @@
         console.log("Error locating submit button!");
         return;
     }
-    submitButton.addEventListener("click", () => {
-        let form = document.querySelector("form");
+    let form = document.querySelector("form");
+    form.addEventListener("submit", () => {
         form.classList.add("signed-up");
     });
 })();
