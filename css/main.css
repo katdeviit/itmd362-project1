@@ -3,6 +3,11 @@ html {
   font-size: 1em;
 }
 
+/* Disable selecting the header elements */
+header {
+  user-select: none;
+}
+
 body {
   background-color: white;
   transition: 0.25s linear background-color;
@@ -205,6 +210,16 @@ form input {
   background-clip: padding-box, border-box;
 }
 
+form input:hover,
+form input:active {
+  background-image: linear-gradient(white, white),
+    radial-gradient(
+      circle at top left,
+      rgba(15, 187, 218) 17%,
+      rgba(183, 23, 246) 100%
+    );
+}
+
 form .submit-field {
   margin-top: 1.5em;
   margin-bottom: 0;
@@ -212,12 +227,16 @@ form .submit-field {
   width: 100%;
 }
 
+form .submit-field input {
+  padding: 5px;
+}
+
 @media (max-width: 560px) {
   h1 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
   body {
-    padding-top: calc(2em + 8px);
+    padding-top: calc(2.5em + 8px);
   }
   html {
     font-size: 1.05em;
@@ -226,16 +245,13 @@ form .submit-field {
     text-align: center;
   }
   section {
-    padding: 2em;
+    padding: 2.5em;
   }
   .night-mode-button {
-    position: absolute;
     right: 25px;
-    top: 5px;
-    display: block;
   }
   .night-mode-button img {
-    height: 30px;
+    height: 32px;
   }
 }
 
