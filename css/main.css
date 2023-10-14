@@ -1,7 +1,24 @@
 html {
-  background-color: white;
   font-family: Verdana, sans-serif;
   font-size: 1em;
+}
+
+body {
+  background-color: white;
+  transition: 0.25s linear background-color;
+}
+
+body.mode-dark {
+  background-color: black;
+  color: white;
+}
+
+.mode-dark section {
+  background-color: rgba(22, 22, 22, 0.384);
+}
+
+.mode-dark section:nth-child(2) {
+  background-color: rgba(22, 22, 22, 0.13);
 }
 
 strong {
@@ -14,6 +31,11 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.mode-dark header {
+  background-color: rgb(0, 0, 0);
+  border-bottom: 1px solid rgba(160, 160, 160, 0.548);
 }
 
 /* Padding the size of the sticky header */
@@ -148,6 +170,16 @@ form {
     );
   background-origin: border-box;
   background-clip: padding-box, border-box;
+}
+
+.mode-dark form {
+  background-image: linear-gradient(rgb(20, 20, 20), rgb(20, 20, 20)),
+    radial-gradient(
+      circle at top left,
+      rgb(246, 167, 23) 0%,
+      rgb(175, 13, 140) 17%,
+      rgb(0, 212, 255) 100%
+    );
 }
 
 form .field {
