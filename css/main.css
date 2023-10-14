@@ -122,6 +122,17 @@ section .section-content {
   max-width: 1200px;
 }
 
+.night-mode {
+  position: absolute;
+  right: 35px;
+  top: 10px;
+  display: block;
+}
+
+.night-mode img {
+  height: 35px;
+}
+
 form {
   max-width: 500px;
   padding: 2em;
@@ -185,6 +196,15 @@ form .submit-field {
   section {
     padding: 2em;
   }
+  .night-mode {
+    position: absolute;
+    right: 25px;
+    top: 5px;
+    display: block;
+  }
+  .night-mode img {
+    height: 30px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -221,4 +241,11 @@ form .submit-field {
     margin-left: 2em;
     max-width: 420px;
   }
+}
+.mode-dark .show-light {
+  display: none;
+}
+
+.mode-light .show-dark {
+  display: none;
 }
