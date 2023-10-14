@@ -92,7 +92,7 @@ ul li {
 }
 
 section {
-  padding: 5vh 15vw;
+  padding: 8vh 15vw;
   background-color: rgba(218, 218, 218, 0.5);
   border-top-width: 5px;
   border-style: solid;
@@ -125,6 +125,7 @@ section .section-content {
 form {
   max-width: 500px;
   padding: 2em;
+  margin-top: 10px;
   border: double 4px transparent;
   border-radius: 20px;
   background-image: linear-gradient(white, white),
@@ -161,9 +162,24 @@ form .submit-field {
 }
 
 @media (max-width: 560px) {
+  h1 {
+    font-size: 2em;
+  }
+  body {
+    padding-top: calc(2em + 8px);
+  }
   html {
     font-size: 1.05em;
   }
+  form .submit-field {
+    text-align: center;
+  }
+  section {
+    padding: 2em;
+  }
+}
+
+@media (max-width: 1000px) {
   form label {
     display: block;
     width: fit-content;
@@ -172,12 +188,6 @@ form .submit-field {
     display: block;
     margin: 0.25em 0;
     width: calc(100% - 10px);
-  }
-  form .submit-field {
-    text-align: center;
-  }
-  section {
-    padding: 2em;
   }
 }
 
@@ -193,7 +203,6 @@ form .submit-field {
   .section-split div {
     flex: 1;
     width: fit-content;
-    max-width: 400px;
   }
 
   .section-left {
@@ -202,5 +211,6 @@ form .submit-field {
 
   .section-right {
     margin-left: 2em;
+    max-width: 420px;
   }
 }
