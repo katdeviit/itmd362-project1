@@ -57,9 +57,9 @@ h1 {
   display: inline-block;
   background-image: linear-gradient(
     to right,
-    rgba(246, 167, 23, 1) 0%,
+    rgb(246, 167, 23) 0%,
     rgb(175, 13, 140) 17%,
-    rgba(0, 212, 255, 1) 100%
+    rgb(0, 212, 255) 100%
   );
   background-clip: text;
   -moz-background-clip: text;
@@ -98,9 +98,9 @@ section {
   border-style: solid;
   border-image: linear-gradient(
       to right,
-      rgba(246, 167, 23, 1) 0%,
+      rgb(246, 167, 23) 0%,
       rgb(175, 13, 140) 17%,
-      rgba(0, 212, 255, 1) 100%
+      rgb(0, 212, 255) 100%
     )
     100% 1;
 }
@@ -109,7 +109,7 @@ section:nth-child(2) {
   background-color: rgba(236, 236, 236, 0.5);
   border-image: linear-gradient(
       to right,
-      rgba(0, 212, 255, 1) 0%,
+      rgb(0, 212, 255) 0%,
       rgb(13, 151, 175) 17%,
       rgb(183, 23, 246) 100%
     )
@@ -131,9 +131,9 @@ form {
   background-image: linear-gradient(white, white),
     radial-gradient(
       circle at top left,
-      rgba(246, 167, 23, 1) 0%,
+      rgb(246, 167, 23) 0%,
       rgb(175, 13, 140) 17%,
-      rgba(0, 212, 255, 1) 100%
+      rgb(0, 212, 255) 100%
     );
   background-origin: border-box;
   background-clip: padding-box, border-box;
@@ -149,9 +149,17 @@ form label {
 }
 
 form input {
-  border-radius: 5px;
-  border: 2px solid rgb(125, 113, 192);
   padding: 2px 5px;
+  border: double 2px transparent;
+  border-radius: 5px;
+  background-image: linear-gradient(white, white),
+    radial-gradient(
+      circle at top left,
+      rgba(15, 187, 218, 0.75) 17%,
+      rgba(183, 23, 246, 0.75) 100%
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
 form .submit-field {
