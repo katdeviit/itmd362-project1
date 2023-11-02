@@ -263,6 +263,11 @@ form .submit-field input {
   html {
     font-size: 1.05em;
   }
+  form {
+    margin: -1.75em;
+    margin-top: 2em;
+    padding: 1em 0.25em;
+  }
   form .submit-field {
     text-align: center;
   }
@@ -288,6 +293,12 @@ form .submit-field input {
     display: block;
     margin: 0.25em 0;
     width: calc(100% - 10px);
+  }
+  form .field input {
+    height: 30px;
+  }
+  form .submit-field input {
+    height: 40px;
   }
 }
 
